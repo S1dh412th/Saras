@@ -28,10 +28,6 @@ char* fnGetData(char [], char [], char [], char*);
 void fnModify(void);
 void fRemove(char*,char*);
 
-/*
-    date: 9 Dec 2019
-    Author:Snehal R. M.
-*/
 int main(void)
 {
     char type[20],use[20],brand[20],*filename;
@@ -87,7 +83,6 @@ int main(void)
 /*
     date: 9 Dec 2019
     function return: filename that program uses to manipulate persistent information
-    Author: Sidharth
 */
 char* fnGetData(char type[20], char use[20], char brand[20], char *filename)
 {
@@ -112,11 +107,6 @@ char* fnGetData(char type[20], char use[20], char brand[20], char *filename)
     return filename;
 }// end of fnGetData
 
-/*
-    function description : to Insert any new information
-    date: 9 Dec 2019
-    Author: Sidharth
-*/
 void fnInsert(void)
 {
     char type[20], use[20], brand[20],ch,*filename=NULL;
@@ -215,7 +205,6 @@ void fnInsert(void)
 /*
     file description : to delete a record and to delete the file if it is empty
     date: 9 Dec 2019
-    Author: Ramya Ashrit
 */
 void fnDelete(void)
 {
@@ -281,7 +270,6 @@ void fnDelete(void)
 /*
     date: 9 Dec 2019
     function return value: position of the product record from file (line number)
-    Author: Ashwini
 */
 int fnSearch(char type[20], char use[20], char brand[20], char *filename)
 {
@@ -360,7 +348,6 @@ int fnSearch(char type[20], char use[20], char brand[20], char *filename)
 /*
     function description : to modify an existing record
     date: 9 Dec 2019
-    Author: Adithi N.Prabhu
 */
 void fnModify(void)
 {
